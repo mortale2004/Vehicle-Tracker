@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { LayoutDashboard, MapPin, Car, LogOut } from "lucide-react"
 import { useRecoilValue } from "recoil"
 import { signOut, useSession } from "next-auth/react"
+import { Fragment } from "react";
 
 export function  DashboardNav() {
   const pathname = usePathname();
@@ -47,8 +48,10 @@ export function  DashboardNav() {
     // },
   ]
 
+
   return (
-    <nav className="grid items-start gap-2 py-4">
+    <Fragment>
+
       {routes.map((route) => {
         const Icon = route.icon
         return data?.user?.role === route?.role && (
@@ -67,7 +70,8 @@ export function  DashboardNav() {
           <LogOut className="mr-2 h-4 w-4" />
           Logout
         </Button>
-    </nav>
+    </Fragment>
+
   )
 }
 

@@ -11,14 +11,9 @@ export default function Home() {
           <span className="ml-2 text-xl font-bold">FleetTracker</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-            Features
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-            Pricing
-          </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#">
-            About
+         
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/register">
+            Register
           </Link>
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="/login">
             Login
@@ -46,9 +41,7 @@ export default function Home() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link href="/demo">
-                    <Button variant="outline">View Demo</Button>
-                  </Link>
+                 
                 </div>
               </div>
               <div className="flex items-center justify-center">
