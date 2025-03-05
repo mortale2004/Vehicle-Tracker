@@ -49,7 +49,7 @@ export default function Home() {
                   alt="Vehicle Tracking"
                   className="aspect-video overflow-hidden rounded-xl object-cover object-center"
                   height="310"
-                  src="/placeholder.svg?height=620&width=1100"
+                  src="/gmap.jpg?height=620&width=1100"
                   width="550"
                 />
               </div>
